@@ -20,28 +20,47 @@ great({
   age: 21,
 });
 
+// assigment #1
+
+// interface User {
+//   firstname: string;
+//   lastname: string;
+//   age: number;
+//   email: string;
+// }
+
+// function isLigal(user: User) {
+//   if (user.age > 18) {
+//     return "you will dreive";
+//   } else {
+//     return " you will not drive";
+//   }
+// }
+
+// const user1: User = {
+//   firstname: "best",
+//   lastname: "abc",
+//   age: 2,
+//   email: "abc@gmail.com",
+// };
+
+// let ans = isLigal(user1);
+
+// console.log(ans);
+
+// diferance between interface and type
+
 interface User {
-  firstname: string;
-  lastname: string;
+  name: string;
   age: number;
-  email: string;
 }
 
-function isLigal(user: User) {
-  if (user.age > 18) {
-    return "you will dreive";
-  } else {
-    return " you will not drive";
-  }
-}
-
-const user1: User = {
-  firstname: "best",
-  lastname: "abc",
-  age: 2,
-  email: "abc@gmail.com",
+type UserType = {
+  name: string;
+  age: number;
 };
 
-let ans = isLigal(user1);
-
-console.log(ans);
+let user: UserType = {
+  name: "akash",
+  age: 21,
+};
