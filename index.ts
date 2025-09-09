@@ -92,3 +92,4 @@ type Manager = {
 type ManagerEmployee = Employee & Manager;
 
 const boss: ManagerEmployee = { id: 1, name: "Alok", role: "Team Lead" };
+console.log(boss);
