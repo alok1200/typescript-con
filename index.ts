@@ -50,17 +50,45 @@ great({
 
 // diferance between interface and type
 
-interface User {
-  name: string;
-  age: number;
+// interface User {
+//   name: string;
+//   age: number;
+// }
+
+// type UserType = {
+//   name: string;
+//   age: number;
+// };
+
+// let user: UserType = {
+//   name: "akash",
+//   age: 21,
+// };
+
+function firstElement1<Type>(arr: Type[]) {
+  return arr[0];
 }
 
-type UserType = {
+function firstElement2<Type extends any[]>(arr: Type) {
+  return arr[0];
+}
+
+// a: number (good)
+const a = firstElement1([1, 2, 3]);
+// b: any (bad)
+const b = firstElement2([1, 2, 3]);
+
+type Status = "success" | "error" | "loading";
+
+type Employee = {
+  id: number;
   name: string;
-  age: number;
 };
 
-let user: UserType = {
-  name: "akash",
-  age: 21,
+type Manager = {
+  role: string;
 };
+
+type ManagerEmployee = Employee & Manager;
+
+const boss: ManagerEmployee = { id: 1, name: "Alok", role: "Team Lead" };
