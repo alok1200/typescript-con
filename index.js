@@ -61,4 +61,11 @@ const a = firstElement1([1, 2, 3]);
 // b: any (bad)
 const b = firstElement2([1, 2, 3]);
 const boss = { id: 1, name: "Alok", role: "Team Lead" };
+console.log(boss);
+const person = {
+    firstname: "Alok",
+    lastname: "Singh",
+    age: 24,
+};
+console.log(person);
 //# sourceMappingURL=index.js.map

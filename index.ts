@@ -93,3 +93,18 @@ type ManagerEmployee = Employee & Manager;
 
 const boss: ManagerEmployee = { id: 1, name: "Alok", role: "Team Lead" };
 console.log(boss);
+
+type User = {
+  firstname: string;
+  lastname: string;
+  age: number;
+  email?: string; // optional property
+};
+
+const person: User = {
+  firstname: "Alok",
+  lastname: "Singh",
+  age: 24,
+};
+
+console.log(person);
