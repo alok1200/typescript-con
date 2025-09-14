@@ -68,4 +68,11 @@ const person = {
     age: 24,
 };
 console.log(person);
+let user1 = {
+    name: "abcd",
+    age: 21,
+    greet: () => {
+        return "hello";
+    },
+};
 //# sourceMappingURL=index.js.map

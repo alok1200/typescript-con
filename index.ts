@@ -108,3 +108,17 @@ const person: User = {
 };
 
 console.log(person);
+
+interface user {
+  name: string;
+  age: number;
+  greet: () => string;
+}
+
+let user1: user = {
+  name: "abcd",
+  age: 21,
+  greet: () => {
+    return "hello";
+  },
+};
